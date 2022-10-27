@@ -1,0 +1,22 @@
+h1 {text-align: center;
+font-family:sans-serif;}
+img{
+    width: 33%;
+    height: auto;
+    float:left;
+    max-width: 235px;
+}
+a:hover img{
+    filter: saturate(1);
+}
+
+h1 {text-align: center;}
+.saturate {filter: saturate(7);}
+.blur{filter: blur(4px);}
+.grayscale{ filter: grayscale(100%);
+
+}
+#frutas{
+    background-color: aquamarine;
+   display: flexbox;
+}
