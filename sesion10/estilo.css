@@ -16,7 +16,3 @@ h1 {text-align: center;}
 .grayscale{ filter: grayscale(100%);
 
 }
-#frutas{
-    background-color: aquamarine;
-   display: flexbox;
-}
