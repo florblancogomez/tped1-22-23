@@ -41,6 +41,7 @@ img {
     padding: 10px;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
+    align-content: flex-start;
 }
 
 .columna {
