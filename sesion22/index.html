@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejemplo Navbar responsive y carrusel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo-nIKE-bLANCO.png" class="img-fluid" alt="Logo NIKE">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://easda.es/">art direction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://easda.es/" target="_blank">Interaction Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fondo.jpg" target="_blank">Experience Design</a></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <div id="carrusel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carrusel" data-slide-to="1"></li>
+                        <li data-target="#carrusel" data-slide-to="2"></li>
+                        <li data-target="#carrusel" data-slide-to="3"></li>
+                        <li data-target="#carrusel" data-slide-to="4"></li>
+                        <li data-target="#carrusel" data-slide-to="5"></li>
+                        <li data-target="#carrusel" data-slide-to="6"></li>
+                     
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- ¡¡ Cuidado: sólo puede haber uno "active" -->
+                            <img src="img/1.jpg" alt="National Geographics">
+                            <div class="carousel-caption">
+                                <h3>NIKE DIGITAL</h3>
+                                <p>Un comentario sobre la foto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/2.jpg" alt="National Geographics">
+                            <div class="carousel-caption">
+                                <h3>NIKE WEEKKEND</h3>
+                                <p>Otro comentario sobre la foto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/3.jpg" alt="National Geographics">
+                            <div class="carousel-caption">
+                                <h3>NIKE AIR</h3>
+                                <p>Un comentario sobre la foto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/4.jpg" alt="El País">
+                            <div class="carousel-caption">
+                                <h3>NIKE BLAZER</h3>
+                                <p>Un comentario sobre la foto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/5jpg.jpg" alt="El País">
+                            <div class="carousel-caption">
+                                <h3>NIKE </h3>
+                                <p>Un comentario sobre la foto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/6.jpg" alt="El País">
+                            <div class="carousel-caption">
+                                <h3>NIKE GREEN</h3>
+                                <p>Un comentario sobre la foto</p>
+                            </div>
+                        </div>
+                       
+                    <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carrusel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+      
+        <ul>
+            <li>Projects</li>
+            <li>Studio</li>
+            <li>News</li>
+            <li>Careers</li>
+            <li>Contact</li>
+        </ul> 
+    </footer>
+</body>
+
+</html>
