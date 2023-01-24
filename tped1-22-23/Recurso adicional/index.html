@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Bootstrap, jQuery</title>
+
+    <!-- INICIO BOOTSTRAP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FIN BOOTSTRAP -->
+    
+    <!-- Iconos, véase https://www.w3schools.com/icons/fontawesome5_icons_chat.asp -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Fin iconos -->
+    
+    <!-- jQuery ya está metido arriba con lo de Bootstrap -->
+
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Código interacción jQuery -->
+    <script>
+    $(document).ready(function(){
+      $("#enlaceChat").click(function(){
+            $("#chat").toggle("slow"); // toggle pone y quita
+            $(this).toggleClass("chatOculto");
+            // this es quien ha recibido el evento, en este caso esto es equivalente a escribir
+            // $("#enlaceChat").toggleClass("chatOculto");
+      });
+    });
+    </script>    
+</head>
+
+<body>
+    <!-- Inicio menú -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">TPED1</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id="enlaceChat" class='far fa-comment-alt'></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fin menú -->
+
+    <div class="container-fluid">
+        <div class="row" id="principal">
+            <!-- cuando #chat se muestra, #streaming ocupará col-8, cuando #chat está oculto,
+                #streaming ocupará col-12-->
+            <div class="col" id="streaming"> 
+                <div> <!-- lo meto en un div para poder manipularlo sin afectar a lo que tenga Bootstrap -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Po5Q-EqNZEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4" id="chat">
+                <h2>Chat</h2>
+                <textarea></textarea>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

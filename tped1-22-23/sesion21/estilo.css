@@ -1,0 +1,46 @@
+/* Recordad que las cajas de Bootstrap 4 son Flex */
+header .row {    
+    align-content: center; /* alineo verticalmente las columnas */
+}
+
+.contenedorAlineamientoVertical {
+    display: flex; /* las columnas tienen  que ser flex para alinear verticalmente sus hijos */
+    align-items: center; /* alineo verticalmente el contenido */
+    height: 200px;
+}
+
+nav li {
+    list-style: none;
+}
+
+a {
+    color: green;
+    padding: 20px;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+#botonesCentrales {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#botonesCentrales * {
+    padding: 20px;
+}
+
+/* quito el borde a card */
+.card {
+    border-style: none;
+}
+
+footer {
+    height: 300px;
+}
+#videoLibrary {
+    text-align: center;
+    margin-top: 50px;
+}
